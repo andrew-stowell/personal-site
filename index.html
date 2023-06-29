@@ -1,0 +1,46 @@
+<html lang="en">
+<head><meta charset="us-ascii">
+	<title>Andrew Stowell</title>
+	<style>
+	    body {
+	        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	    }
+	    body,
+	    html {
+	        padding: 0;
+	        margin: 0;
+	    }
+	    #vanta {
+	        height: 100vh;
+	        width: 100vw;
+	    }
+
+	    h1 {
+	        font-size: 40px;
+	        font-weight: bold;
+	        position: absolute;
+	        top: 50%;
+	        left: 0;
+	        transform: translateY(-50%);
+	        padding: 0 8vw;
+	    }
+	</style>
+</head>
+<body>
+<div id="vanta">
+    <h1>Web Developer, particularly fond of Drupal</h1>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/three@0.133.1/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.fog.min.js"></script>
+<script>
+    VANTA.FOG({
+      el: "#vanta",
+      mouseControls: false,
+      touchControls: false,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00
+    })
+</script>
+</body>
+</html>

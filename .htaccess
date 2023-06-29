@@ -1,0 +1,12 @@
+RewriteEngine On
+
+# Ensure https
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Ensure non-www
+RewriteCond %{HTTP_HOST} ^www.andrewjstowell.com [NC]
+RewriteRule ^(.*)$ https://andrewjstowell.com/$1 [L,R=301]
+
+# Do not allow direct access to index file
+RewriteRule ^index.html$ / [NC,R,L]
